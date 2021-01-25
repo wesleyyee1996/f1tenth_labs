@@ -7,5 +7,6 @@
 subdirs("gtest")
 subdirs("my_python_pkg")
 subdirs("my_python_pkg_2")
+subdirs("safety")
 subdirs("f1tenth_simulator")
 subdirs("wesley_yee_ws")

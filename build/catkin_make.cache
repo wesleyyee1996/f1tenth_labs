@@ -1,2 +1,2 @@
-f1tenth_simulator:my_python_pkg:my_python_pkg_2:wesley_yee_ws
+f1tenth_simulator:my_python_pkg:my_python_pkg_2:safety:wesley_yee_ws
 -DCATKIN_DEVEL_PREFIX=/home/meam520/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/meam520/catkin_ws/install -G Unix Makefiles
