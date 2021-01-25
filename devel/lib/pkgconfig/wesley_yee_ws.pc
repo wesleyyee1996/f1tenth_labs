@@ -1,0 +1,8 @@
+prefix=/home/meam520/catkin_ws/devel
+
+Name: wesley_yee_ws
+Description: Description of wesley_yee_ws
+Version: 0.0.0
+Cflags: -I/home/meam520/catkin_ws/devel/include -I/home/meam520/catkin_ws/src/wesley_yee_ws/include
+Libs: -L${prefix}/lib -lwesley_yee_ws
+Requires: roscpp rospy std_msgs message_runtime

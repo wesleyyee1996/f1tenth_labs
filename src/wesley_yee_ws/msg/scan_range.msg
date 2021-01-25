@@ -1,0 +1,2 @@
+float32 farthest_distance
+float32 closest_distance

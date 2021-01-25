@@ -1,0 +1,8 @@
+prefix=/home/meam520/catkin_ws/devel
+
+Name: my_python_pkg
+Description: Description of my_python_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
