@@ -55,21 +55,35 @@ public:
 
     void scan_callback(const sensor_msgs::LaserScan::ConstPtr &scan_msg) {
         // TODO: calculate TTC
-    	
-    	double rad_per_step = 6.28319/720;
-    	
-    	for (unsigned int i=269; i < 450; i = i+1){
-    		if (!std::isinf(scan_msg->ranges[i]) || !std::isnan(scan_msg->ranges[i])){
-    			
-    			double ttc = std::max(scan_msg->ranges[i]*cos(abs(static_cast<int>(359-i))*rad_per_step)/speed,static_cast<double>(0));
-    			
-    			ROS_INFO("Time to collision: [%f]",ttc);
-    		}
-    		
-    	}
-    	
-        // TODO: publish drive/brake message
+    	calculate_TTC(scan_msg, 0, 200, 0.3f);
+    	calculate_TTC(scan_msg, 400, 600, 0.3f);
+    	calculate_TTC(scan_msg, 879, 1079, 0.3f);
     }
+    
+    void calculate_TTC(const sensor_msgs::LaserScan::ConstPtr &scan_msg, int start, int end, float threshold) {
+    	
+    	for (unsigned int i=start; i < end; i++){
+			if (!std::isinf(scan_msg->ranges[i]) || !std::isnan(scan_msg->ranges[i])){
+							
+				double rad_per_step = 6.28319/1080;
+				//double angle = abs(static_cast<int>(359-i))*rad_per_step;
+				double angle = abs(static_cast<int>(i))*rad_per_step;
+				
+				if (speed > 0){
+					//double ttc = std::max((scan_msg->ranges[i]*cos(angle)*rad_per_step)/speed,static_cast<double>(0));
+					double ttc = std::max(scan_msg->ranges[i]/speed,static_cast<double>(0));
+					
+					if (ttc <= threshold){
+						ROS_INFO("About to crash! Sending brake message! TTC: [%f], Angle: [%f], Distance: [%f]",ttc,angle*57.2958,scan_msg->ranges[i]);
+						drive_stamp.drive.speed = double(0);
+						bool_brake.data = true;
+						brake_pub.publish(drive_stamp);
+						bool_pub.publish(bool_brake);
+					}
+				}
+			}
+    	}
+    }    
 
 };
 int main(int argc, char ** argv) {
