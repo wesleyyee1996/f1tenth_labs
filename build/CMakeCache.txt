@@ -481,6 +481,12 @@ tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
 visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
 
 //Value Computed by CMake
+wall_follow_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/wall_follow
+
+//Value Computed by CMake
+wall_follow_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/wall_follow
+
+//Value Computed by CMake
 wesley_yee_ws_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/wesley_yee_ws
 
 //Value Computed by CMake
@@ -599,7 +605,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -55,9 +55,9 @@ public:
 
     void scan_callback(const sensor_msgs::LaserScan::ConstPtr &scan_msg) {
         // TODO: calculate TTC
-    	calculate_TTC(scan_msg, 0, 200, 0.3f);
-    	calculate_TTC(scan_msg, 400, 600, 0.3f);
-    	calculate_TTC(scan_msg, 879, 1079, 0.3f);
+    	calculate_TTC(scan_msg, 0, 100, 0.3f);
+    	calculate_TTC(scan_msg, 400, 600, 0.35f);
+    	calculate_TTC(scan_msg, 979, 1079, 0.3f);
     }
     
     void calculate_TTC(const sensor_msgs::LaserScan::ConstPtr &scan_msg, int start, int end, float threshold) {
@@ -66,13 +66,14 @@ public:
 			if (!std::isinf(scan_msg->ranges[i]) || !std::isnan(scan_msg->ranges[i])){
 							
 				double rad_per_step = 6.28319/1080;
-				//double angle = abs(static_cast<int>(359-i))*rad_per_step;
 				double angle = abs(static_cast<int>(i))*rad_per_step;
 				
-				if (speed > 0){
-					//double ttc = std::max((scan_msg->ranges[i]*cos(angle)*rad_per_step)/speed,static_cast<double>(0));
-					double ttc = std::max(scan_msg->ranges[i]/speed,static_cast<double>(0));
+				//double ttc = std::max((scan_msg->ranges[i]*cos(angle)*rad_per_step)/speed,static_cast<double>(0));
+				double ttc = std::max(scan_msg->ranges[i]/abs(speed),static_cast<double>(0));
+				
+				if (!std::isinf(ttc)){
 					
+					// only throw error if going forward and speed is positive or going backward and speed is negative
 					if (ttc <= threshold){
 						ROS_INFO("About to crash! Sending brake message! TTC: [%f], Angle: [%f], Distance: [%f]",ttc,angle*57.2958,scan_msg->ranges[i]);
 						drive_stamp.drive.speed = double(0);

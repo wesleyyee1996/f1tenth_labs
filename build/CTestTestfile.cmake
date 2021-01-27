@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("wall_follow")
 subdirs("my_python_pkg")
 subdirs("my_python_pkg_2")
 subdirs("safety")

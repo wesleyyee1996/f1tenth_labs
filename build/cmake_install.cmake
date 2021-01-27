@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/meam520/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/meam520/catkin_ws/build/wall_follow/cmake_install.cmake")
   include("/home/meam520/catkin_ws/build/my_python_pkg/cmake_install.cmake")
   include("/home/meam520/catkin_ws/build/my_python_pkg_2/cmake_install.cmake")
   include("/home/meam520/catkin_ws/build/safety/cmake_install.cmake")
