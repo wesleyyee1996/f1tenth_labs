@@ -58,7 +58,7 @@ f1tenth_simulator/CMakeFiles/f1tenth_simulator_generate_messages_eus: /home/meam
 
 /home/meam520/catkin_ws/devel/share/roseus/ros/f1tenth_simulator/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/meam520/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp manifest code for f1tenth_simulator"
-	cd /home/meam520/catkin_ws/build/f1tenth_simulator && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/meam520/catkin_ws/devel/share/roseus/ros/f1tenth_simulator f1tenth_simulator std_msgs nav_msgs sensor_msgs
+	cd /home/meam520/catkin_ws/build/f1tenth_simulator && ../catkin_generated/env_cached.sh /usr/bin/python2.7 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/meam520/catkin_ws/devel/share/roseus/ros/f1tenth_simulator f1tenth_simulator std_msgs nav_msgs sensor_msgs
 
 f1tenth_simulator_generate_messages_eus: f1tenth_simulator/CMakeFiles/f1tenth_simulator_generate_messages_eus
 f1tenth_simulator_generate_messages_eus: /home/meam520/catkin_ws/devel/share/roseus/ros/f1tenth_simulator/manifest.l

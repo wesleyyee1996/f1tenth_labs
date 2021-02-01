@@ -1,0 +1,12 @@
+Symlinking /home/meam520/catkin_ws/devel/lib/python2.7/dist-packages/f1tenth_simulator/__init__.py
+Symlinking /home/meam520/catkin_ws/devel/lib/pkgconfig/f1tenth_simulator.pc
+Symlinking /home/meam520/catkin_ws/devel/lib/f1tenth_simulator/mux
+Symlinking /home/meam520/catkin_ws/devel/lib/f1tenth_simulator/behavior_controller
+Symlinking /home/meam520/catkin_ws/devel/lib/f1tenth_simulator/simulator
+Symlinking /home/meam520/catkin_ws/devel/lib/f1tenth_simulator/keyboard
+Symlinking /home/meam520/catkin_ws/devel/lib/f1tenth_simulator/random_walk
+Symlinking /home/meam520/catkin_ws/devel/share/f1tenth_simulator/cmake/f1tenth_simulatorConfig.cmake
+Symlinking /home/meam520/catkin_ws/devel/share/f1tenth_simulator/cmake/f1tenth_simulatorConfig-version.cmake
+Symlinking /home/meam520/catkin_ws/devel/share/f1tenth_simulator/cmake/f1tenth_simulator-msg-extras.cmake
+Symlinking /home/meam520/catkin_ws/devel/share/f1tenth_simulator/cmake/f1tenth_simulator-msg-paths.cmake
+Symlinking /home/meam520/catkin_ws/devel/share/roseus/ros/f1tenth_simulator/manifest.l

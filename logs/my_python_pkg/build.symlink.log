@@ -1,0 +1,3 @@
+Symlinking /home/meam520/catkin_ws/devel/lib/pkgconfig/my_python_pkg.pc
+Symlinking /home/meam520/catkin_ws/devel/share/my_python_pkg/cmake/my_python_pkgConfig.cmake
+Symlinking /home/meam520/catkin_ws/devel/share/my_python_pkg/cmake/my_python_pkgConfig-version.cmake

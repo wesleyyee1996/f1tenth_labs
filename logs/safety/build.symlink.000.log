@@ -1,0 +1,4 @@
+Symlinking /home/meam520/catkin_ws/devel/lib/safety/safety_node
+Symlinking /home/meam520/catkin_ws/devel/lib/pkgconfig/safety.pc
+Symlinking /home/meam520/catkin_ws/devel/share/safety/cmake/safetyConfig.cmake
+Symlinking /home/meam520/catkin_ws/devel/share/safety/cmake/safetyConfig-version.cmake

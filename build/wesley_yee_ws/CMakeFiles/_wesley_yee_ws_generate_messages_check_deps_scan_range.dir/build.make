@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/meam520/catkin_ws/build
 include wesley_yee_ws/CMakeFiles/_wesley_yee_ws_generate_messages_check_deps_scan_range.dir/progress.make
 
 wesley_yee_ws/CMakeFiles/_wesley_yee_ws_generate_messages_check_deps_scan_range:
-	cd /home/meam520/catkin_ws/build/wesley_yee_ws && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py wesley_yee_ws /home/meam520/catkin_ws/src/wesley_yee_ws/msg/scan_range.msg 
+	cd /home/meam520/catkin_ws/build/wesley_yee_ws && ../catkin_generated/env_cached.sh /usr/bin/python2.7 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py wesley_yee_ws /home/meam520/catkin_ws/src/wesley_yee_ws/msg/scan_range.msg 
 
 _wesley_yee_ws_generate_messages_check_deps_scan_range: wesley_yee_ws/CMakeFiles/_wesley_yee_ws_generate_messages_check_deps_scan_range
 _wesley_yee_ws_generate_messages_check_deps_scan_range: wesley_yee_ws/CMakeFiles/_wesley_yee_ws_generate_messages_check_deps_scan_range.dir/build.make

@@ -1,0 +1,23 @@
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/src/st_kinematics.cpp:[m[K In static member function ‘[01m[Kstatic racecar_simulator::CarState racecar_simulator::STKinematics::update_k(racecar_simulator::CarState, double, double, racecar_simulator::CarParams, double)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/src/st_kinematics.cpp:102:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta_double_dot[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     double [01;35m[Ktheta_double_dot[m[K = accel / p.wheelbase * std::tan(start.steer_angle) +
+            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/src/st_kinematics.cpp:104:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kslip_angle_dot[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     double [01;35m[Kslip_angle_dot[m[K = 0;
+            [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/behavior_controller.cpp:[m[K In member function ‘[01m[Kvoid BehaviorController::imu_callback(const Imu&)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/behavior_controller.cpp:371:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     void imu_callback(const sensor_msgs::Imu & [01;35m[Kmsg[m[K) {
+                                                [01;35m[K^~~[m[K
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/simulator.cpp:[m[K In member function ‘[01m[Kvoid RacecarSimulator::update_pose(const ros::TimerEvent&)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/simulator.cpp:311:36:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         if ([01;35m[Ksteering_buffer.size() < buffer_length[m[K) {
+             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/random_walk.cpp:[m[K In member function ‘[01m[Kvoid RandomWalker::odom_callback(const Odometry&)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/random_walk.cpp:59:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     void odom_callback(const nav_msgs::Odometry & [01;35m[Kmsg[m[K) {
+                                                   [01;35m[K^~~[m[K
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/keyboard.cpp:[m[K In function ‘[01m[Kvoid sigHandler(int)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/keyboard.cpp:16:21:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knot_used[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void sigHandler(int [01;35m[Knot_used[m[K) {
+                     [01;35m[K^~~~~~~~[m[K

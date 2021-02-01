@@ -1,0 +1,94 @@
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_cpp[0m
+[  0%] Built target nav_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target f1tenth_simulator[0m
+[  5%] [32mBuilding CXX object CMakeFiles/f1tenth_simulator.dir/src/distance_transform.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/f1tenth_simulator.dir/src/ks_kinematics.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/f1tenth_simulator.dir/src/precompute.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/f1tenth_simulator.dir/src/scan_simulator_2d.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/f1tenth_simulator.dir/src/st_kinematics.cpp.o[0m
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/src/st_kinematics.cpp:[m[K In static member function ‘[01m[Kstatic racecar_simulator::CarState racecar_simulator::STKinematics::update_k(racecar_simulator::CarState, double, double, racecar_simulator::CarParams, double)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/src/st_kinematics.cpp:102:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta_double_dot[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     double [01;35m[Ktheta_double_dot[m[K = accel / p.wheelbase * std::tan(start.steer_angle) +
+            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/src/st_kinematics.cpp:104:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kslip_angle_dot[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     double [01;35m[Kslip_angle_dot[m[K = 0;
+            [01;35m[K^~~~~~~~~~~~~~[m[K
+[ 35%] [32m[1mLinking CXX static library libf1tenth_simulator.a[0m
+[ 35%] Built target f1tenth_simulator
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_lisp[0m
+[ 35%] Built target nav_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[ 35%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[ 35%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[ 35%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[ 35%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_nodejs[0m
+[ 35%] Built target nav_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_eus[0m
+[ 35%] Built target nav_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[ 35%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[ 35%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[ 35%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[ 35%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_py[0m
+[ 35%] Built target nav_msgs_generate_messages_py
+[35m[1mScanning dependencies of target f1tenth_simulator_generate_messages_cpp[0m
+[ 35%] Built target f1tenth_simulator_generate_messages_cpp
+[35m[1mScanning dependencies of target f1tenth_simulator_generate_messages_lisp[0m
+[ 35%] Built target f1tenth_simulator_generate_messages_lisp
+[35m[1mScanning dependencies of target f1tenth_simulator_generate_messages_nodejs[0m
+[ 35%] Built target f1tenth_simulator_generate_messages_nodejs
+[35m[1mScanning dependencies of target f1tenth_simulator_generate_messages_eus[0m
+[ 41%] [34m[1mGenerating EusLisp manifest code for f1tenth_simulator[0m
+[ 41%] Built target f1tenth_simulator_generate_messages_eus
+[35m[1mScanning dependencies of target f1tenth_simulator_generate_messages_py[0m
+[ 41%] Built target f1tenth_simulator_generate_messages_py
+[35m[1mScanning dependencies of target behavior_controller[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/behavior_controller.dir/node/behavior_controller.cpp.o[0m
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/behavior_controller.cpp:[m[K In member function ‘[01m[Kvoid BehaviorController::imu_callback(const Imu&)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/behavior_controller.cpp:371:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     void imu_callback(const sensor_msgs::Imu & [01;35m[Kmsg[m[K) {
+                                                [01;35m[K^~~[m[K
+[ 52%] [32m[1mLinking CXX executable /home/meam520/catkin_ws/devel/.private/f1tenth_simulator/lib/f1tenth_simulator/behavior_controller[0m
+[ 52%] Built target behavior_controller
+[35m[1mScanning dependencies of target simulator[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/simulator.dir/node/simulator.cpp.o[0m
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/simulator.cpp:[m[K In member function ‘[01m[Kvoid RacecarSimulator::update_pose(const ros::TimerEvent&)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/simulator.cpp:311:36:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         if ([01;35m[Ksteering_buffer.size() < buffer_length[m[K) {
+             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[ 64%] [32m[1mLinking CXX executable /home/meam520/catkin_ws/devel/.private/f1tenth_simulator/lib/f1tenth_simulator/simulator[0m
+[ 64%] Built target simulator
+[35m[1mScanning dependencies of target random_walk[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/random_walk.dir/node/random_walk.cpp.o[0m
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/random_walk.cpp:[m[K In member function ‘[01m[Kvoid RandomWalker::odom_callback(const Odometry&)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/random_walk.cpp:59:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+     void odom_callback(const nav_msgs::Odometry & [01;35m[Kmsg[m[K) {
+                                                   [01;35m[K^~~[m[K
+[ 76%] [32m[1mLinking CXX executable /home/meam520/catkin_ws/devel/.private/f1tenth_simulator/lib/f1tenth_simulator/random_walk[0m
+[ 76%] Built target random_walk
+[35m[1mScanning dependencies of target mux[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/mux.dir/node/mux.cpp.o[0m
+[ 88%] [32m[1mLinking CXX executable /home/meam520/catkin_ws/devel/.private/f1tenth_simulator/lib/f1tenth_simulator/mux[0m
+[ 88%] Built target mux
+[35m[1mScanning dependencies of target keyboard[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/keyboard.dir/node/keyboard.cpp.o[0m
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/keyboard.cpp:[m[K In function ‘[01m[Kvoid sigHandler(int)[m[K’:
+[01m[K/home/meam520/catkin_ws/src/f1tenth_simulator/node/keyboard.cpp:16:21:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knot_used[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ void sigHandler(int [01;35m[Knot_used[m[K) {
+                     [01;35m[K^~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable /home/meam520/catkin_ws/devel/.private/f1tenth_simulator/lib/f1tenth_simulator/keyboard[0m
+[100%] Built target keyboard
+[35m[1mScanning dependencies of target f1tenth_simulator_generate_messages[0m
+[100%] Built target f1tenth_simulator_generate_messages
