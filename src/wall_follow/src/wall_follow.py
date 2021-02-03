@@ -13,8 +13,8 @@ from nav_msgs.msg import Odometry
 #PID CONTROL PARAMS
 ku = 0.1
 pu = 1
-kp = 1
-kd = 0.05
+kp = 1.2
+kd = 0.04
 ki = 0.0
 #ki=0
 servo_offset = 0.0
@@ -121,7 +121,7 @@ class WallFollow:
 #            L = 3
 #        else:
 #            L = 1
-        L = 0.4
+        L = 0.5
         #rospy.loginfo("L: "+str(L)+", Velocity: "+str(VELOCITY))
         return Dt+L*math.sin(alpha)
 
