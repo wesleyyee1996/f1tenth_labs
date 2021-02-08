@@ -1,2 +1,2 @@
-f1tenth_simulator:my_python_pkg:my_python_pkg_2:reactive_methods:safety:wall_follow:wesley_yee_ws
+ackermann_msgs:cartographer_config/f110_description:f1tenth_simulator:hokuyo_node:joystick_drivers/joy:joystick_drivers/joystick_drivers:my_python_pkg:my_python_pkg_2:particle_filter:pure_pursuit:racecar/ackermann_cmd_mux:racecar/racecar:reactive_methods:safety:serial:vesc/vesc:vesc/vesc_ackermann:vesc/vesc_driver:vesc/vesc_msgs:wall_follow:waypoint_logger:wesley_yee_ws
 -DCATKIN_DEVEL_PREFIX=/home/meam520/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/meam520/catkin_ws/install -G Unix Makefiles

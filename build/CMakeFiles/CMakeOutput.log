@@ -659,3 +659,17 @@ Linking C executable cmTC_def60
 make[1]: Leaving directory '/home/meam520/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
+Determining if files linux/joystick.h exist passed with the following output:
+Change Dir: /home/meam520/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_75bdd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_75bdd.dir/build.make CMakeFiles/cmTC_75bdd.dir/build
+make[1]: Entering directory '/home/meam520/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_75bdd.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_75bdd.dir/CheckIncludeFiles.c.o   -c /home/meam520/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_75bdd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75bdd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_75bdd.dir/CheckIncludeFiles.c.o  -o cmTC_75bdd 
+make[1]: Leaving directory '/home/meam520/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+

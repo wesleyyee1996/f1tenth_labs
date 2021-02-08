@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//The threading library used by boost-thread
+BOOST_THREAD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.so
+
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
 
@@ -22,6 +25,48 @@ BUILD_GTEST:BOOL=OFF
 
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=ON
+
+//Boost atomic library (debug)
+Boost_ATOMIC_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_atomic.so
+
+//Boost atomic library (release)
+Boost_ATOMIC_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_atomic.so
+
+//Boost chrono library (debug)
+Boost_CHRONO_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_chrono.so
+
+//Boost chrono library (release)
+Boost_CHRONO_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_chrono.so
+
+//Boost date_time library (debug)
+Boost_DATE_TIME_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_date_time.so
+
+//Boost date_time library (release)
+Boost_DATE_TIME_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_date_time.so
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=Boost_DIR-NOTFOUND
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+//Boost library directory DEBUG
+Boost_LIBRARY_DIR_DEBUG:PATH=/usr/lib/x86_64-linux-gnu
+
+//Boost library directory RELEASE
+Boost_LIBRARY_DIR_RELEASE:PATH=/usr/lib/x86_64-linux-gnu
+
+//Boost system library (debug)
+Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_system.so
+
+//Boost system library (release)
+Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_system.so
+
+//Boost thread library (debug)
+Boost_THREAD_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_thread.so
+
+//Boost thread library (release)
+Boost_THREAD_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_thread.so
 
 //List of ';' separated packages to exclude
 CATKIN_BLACKLIST_PACKAGES:STRING=
@@ -239,6 +284,9 @@ GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
 //Path to a library.
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 
+//Path to a library.
+LOG4CXX_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/liblog4cxx.so
+
 //lsb_release executable was found
 LSB_FOUND:BOOL=TRUE
 
@@ -247,6 +295,9 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2.7
@@ -287,8 +338,23 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Value Computed by CMake
+ackermann_cmd_mux_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/racecar/ackermann_cmd_mux
+
+//Value Computed by CMake
+ackermann_cmd_mux_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/racecar/ackermann_cmd_mux
+
+//Dependencies for the target
+ackermann_cmd_mux_nodelet_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libnodeletlib.so;general;/opt/ros/melodic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;yaml-cpp;
+
+//Value Computed by CMake
+ackermann_msgs_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/ackermann_msgs
+
 //The directory containing a CMake configuration file for ackermann_msgs.
-ackermann_msgs_DIR:PATH=/opt/ros/melodic/share/ackermann_msgs/cmake
+ackermann_msgs_DIR:PATH=/home/meam520/catkin_ws/devel/share/ackermann_msgs/cmake
+
+//Value Computed by CMake
+ackermann_msgs_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/ackermann_msgs
 
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
@@ -296,11 +362,38 @@ actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/melodic/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/melodic/share/bondcpp/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/melodic/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/melodic/share/diagnostic_updater/cmake
+
+//The directory containing a CMake configuration file for driver_base.
+driver_base_DIR:PATH=/opt/ros/melodic/share/driver_base/cmake
+
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
+
+//Value Computed by CMake
+f110_description_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/cartographer_config/f110_description
+
+//Value Computed by CMake
+f110_description_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/cartographer_config/f110_description
 
 //Value Computed by CMake
 f1tenth_simulator_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/f1tenth_simulator
@@ -381,11 +474,32 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//Value Computed by CMake
+hokuyo_node_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/hokuyo_node
+
+//Value Computed by CMake
+hokuyo_node_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/hokuyo_node
+
 //The directory containing a CMake configuration file for interactive_markers.
 interactive_markers_DIR:PATH=/opt/ros/melodic/share/interactive_markers/cmake
 
+//Value Computed by CMake
+joy_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/joystick_drivers/joy
+
+//Value Computed by CMake
+joy_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/joystick_drivers/joy
+
+//Value Computed by CMake
+joystick_drivers_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/joystick_drivers/joystick_drivers
+
+//Value Computed by CMake
+joystick_drivers_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/joystick_drivers/joystick_drivers
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+
+//Dependencies for the target
+libhokuyo_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -410,6 +524,30 @@ my_python_pkg_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/my_python_pkg
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/melodic/share/nodelet/cmake
+
+//Value Computed by CMake
+particle_filter_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/particle_filter
+
+//Value Computed by CMake
+particle_filter_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/particle_filter
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
+
+//Value Computed by CMake
+pure_pursuit_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/pure_pursuit
+
+//Value Computed by CMake
+pure_pursuit_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/pure_pursuit
+
+//Value Computed by CMake
+racecar_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/racecar/racecar
+
+//Value Computed by CMake
+racecar_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/racecar/racecar
 
 //Value Computed by CMake
 reactive_methods_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/reactive_methods
@@ -453,8 +591,26 @@ safety_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/safety
 //Value Computed by CMake
 safety_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/safety
 
+//The directory containing a CMake configuration file for self_test.
+self_test_DIR:PATH=/opt/ros/melodic/share/self_test/cmake
+
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+serial_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/serial
+
+//The directory containing a CMake configuration file for serial.
+serial_DIR:PATH=/home/meam520/catkin_ws/devel/share/serial/cmake
+
+//Dependencies for the target
+serial_LIB_DEPENDS:STATIC=general;rt;general;pthread;
+
+//Value Computed by CMake
+serial_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/serial
+
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/melodic/share/smclib/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -477,6 +633,39 @@ tf2_ros_DIR:PATH=/opt/ros/melodic/share/tf2_ros/cmake
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
 
+//Value Computed by CMake
+vesc_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/vesc/vesc
+
+//Value Computed by CMake
+vesc_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/vesc/vesc
+
+//Value Computed by CMake
+vesc_ackermann_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/vesc/vesc_ackermann
+
+//Value Computed by CMake
+vesc_ackermann_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/vesc/vesc_ackermann
+
+//Dependencies for the target
+vesc_ackermann_nodelet_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libnodeletlib.so;general;/opt/ros/melodic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libtf.so;general;/opt/ros/melodic/lib/libtf2_ros.so;general;/opt/ros/melodic/lib/libactionlib.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libtf2.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Value Computed by CMake
+vesc_driver_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/vesc/vesc_driver
+
+//Value Computed by CMake
+vesc_driver_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/vesc/vesc_driver
+
+//Dependencies for the target
+vesc_driver_nodelet_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libnodeletlib.so;general;/opt/ros/melodic/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;general;serial;general;/usr/lib/x86_64-linux-gnu/librt.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;
+
+//Value Computed by CMake
+vesc_msgs_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/vesc/vesc_msgs
+
+//The directory containing a CMake configuration file for vesc_msgs.
+vesc_msgs_DIR:PATH=/home/meam520/catkin_ws/devel/share/vesc_msgs/cmake
+
+//Value Computed by CMake
+vesc_msgs_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/vesc/vesc_msgs
+
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
 
@@ -485,6 +674,12 @@ wall_follow_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/wall_follow
 
 //Value Computed by CMake
 wall_follow_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/wall_follow
+
+//Value Computed by CMake
+waypoint_logger_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/waypoint_logger
+
+//Value Computed by CMake
+waypoint_logger_SOURCE_DIR:STATIC=/home/meam520/catkin_ws/src/waypoint_logger
 
 //Value Computed by CMake
 wesley_yee_ws_BINARY_DIR:STATIC=/home/meam520/catkin_ws/build/wesley_yee_ws
@@ -500,6 +695,34 @@ xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_ATOMIC_LIBRARY_DEBUG
+Boost_ATOMIC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_ATOMIC_LIBRARY_RELEASE
+Boost_ATOMIC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_CHRONO_LIBRARY_DEBUG
+Boost_CHRONO_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_CHRONO_LIBRARY_RELEASE
+Boost_CHRONO_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DATE_TIME_LIBRARY_DEBUG
+Boost_DATE_TIME_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DATE_TIME_LIBRARY_RELEASE
+Boost_DATE_TIME_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_INCLUDE_DIR
+Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR_DEBUG
+Boost_LIBRARY_DIR_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR_RELEASE
+Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
+Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
+Boost_SYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_THREAD_LIBRARY_DEBUG
+Boost_THREAD_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_THREAD_LIBRARY_RELEASE
+Boost_THREAD_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //catkin environment
 CATKIN_ENV:INTERNAL=/home/meam520/catkin_ws/build/catkin_generated/env_cached.sh
 CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/meam520/catkin_ws/build/test_results
@@ -605,7 +828,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -646,6 +869,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2.7][v2.7.17()]
 //Details about finding Threads
@@ -670,10 +895,62 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//Have include linux/joystick.h
+HAVE_LINUX_JOYSTICK_H:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
+//Components requested for this build tree.
+_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;system;thread
+//Last used Boost_INCLUDE_DIR value.
+_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/include
+//Last used Boost_LIBRARY_DIR_DEBUG value.
+_Boost_LIBRARY_DIR_DEBUG_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
+//Last used Boost_LIBRARY_DIR_RELEASE value.
+_Boost_LIBRARY_DIR_RELEASE_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
+//Last used Boost_NAMESPACE value.
+_Boost_NAMESPACE_LAST:INTERNAL=boost
+//Last used Boost_USE_MULTITHREADED value.
+_Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
+__pkg_config_checked_yaml-cpp:INTERNAL=1
+prefix_result:INTERNAL=
+yaml-cpp_CFLAGS:INTERNAL=
+yaml-cpp_CFLAGS_I:INTERNAL=
+yaml-cpp_CFLAGS_OTHER:INTERNAL=
+yaml-cpp_FOUND:INTERNAL=1
+yaml-cpp_INCLUDEDIR:INTERNAL=/usr/include
+yaml-cpp_INCLUDE_DIRS:INTERNAL=
+yaml-cpp_LDFLAGS:INTERNAL=-lyaml-cpp
+yaml-cpp_LDFLAGS_OTHER:INTERNAL=
+yaml-cpp_LIBDIR:INTERNAL=
+yaml-cpp_LIBRARIES:INTERNAL=yaml-cpp
+yaml-cpp_LIBRARY_DIRS:INTERNAL=
+yaml-cpp_LIBS:INTERNAL=
+yaml-cpp_LIBS_L:INTERNAL=
+yaml-cpp_LIBS_OTHER:INTERNAL=
+yaml-cpp_LIBS_PATHS:INTERNAL=
+yaml-cpp_PREFIX:INTERNAL=/usr
+yaml-cpp_STATIC_CFLAGS:INTERNAL=
+yaml-cpp_STATIC_CFLAGS_I:INTERNAL=
+yaml-cpp_STATIC_CFLAGS_OTHER:INTERNAL=
+yaml-cpp_STATIC_INCLUDE_DIRS:INTERNAL=
+yaml-cpp_STATIC_LDFLAGS:INTERNAL=-lyaml-cpp
+yaml-cpp_STATIC_LDFLAGS_OTHER:INTERNAL=
+yaml-cpp_STATIC_LIBDIR:INTERNAL=
+yaml-cpp_STATIC_LIBRARIES:INTERNAL=yaml-cpp
+yaml-cpp_STATIC_LIBRARY_DIRS:INTERNAL=
+yaml-cpp_STATIC_LIBS:INTERNAL=
+yaml-cpp_STATIC_LIBS_L:INTERNAL=
+yaml-cpp_STATIC_LIBS_OTHER:INTERNAL=
+yaml-cpp_STATIC_LIBS_PATHS:INTERNAL=
+yaml-cpp_VERSION:INTERNAL=0.5.2
+yaml-cpp_yaml-cpp_INCLUDEDIR:INTERNAL=
+yaml-cpp_yaml-cpp_LIBDIR:INTERNAL=
+yaml-cpp_yaml-cpp_PREFIX:INTERNAL=
+yaml-cpp_yaml-cpp_VERSION:INTERNAL=
 

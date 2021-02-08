@@ -6,21 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/meam520/catkin_ws/src/f1tenth_simulator/node/random_walk.cpp
-ros/ros.h
--
-ackermann_msgs/AckermannDriveStamped.h
--
-ackermann_msgs/AckermannDrive.h
--
-nav_msgs/Odometry.h
--
-iostream
--
-cstdlib
--
-
-/opt/ros/melodic/include/ackermann_msgs/AckermannDrive.h
+/home/meam520/catkin_ws/devel/include/ackermann_msgs/AckermannDrive.h
 string
 -
 vector
@@ -36,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/opt/ros/melodic/include/ackermann_msgs/AckermannDriveStamped.h
+/home/meam520/catkin_ws/devel/include/ackermann_msgs/AckermannDriveStamped.h
 string
 -
 vector
@@ -54,6 +40,20 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 ackermann_msgs/AckermannDrive.h
+-
+
+/home/meam520/catkin_ws/src/f1tenth_simulator/node/random_walk.cpp
+ros/ros.h
+-
+ackermann_msgs/AckermannDriveStamped.h
+-
+ackermann_msgs/AckermannDrive.h
+-
+nav_msgs/Odometry.h
+-
+iostream
+-
+cstdlib
 -
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
